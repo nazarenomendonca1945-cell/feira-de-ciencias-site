@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roleta do autocuidado: sorteie uma pausa simples para relaxar.">
+  <title>Roleta do autocuidado | Hiperconectividade e Saúde Mental</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="roleta.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <a href="index.html" class="logo">Hiper<span>Conexão</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="roleta.html" aria-current="page">Roleta</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="secao roleta-secao pagina-interna" id="roleta">
+      <h1 class="titulo-pagina">Roleta do autocuidado 🌷</h1>
+      <p class="texto-centro">Gire a roleta e descubra uma atividade simples para relaxar e prestar atenção ao presente.</p>
+
+      <div class="roleta-card">
+        <div class="roleta-area">
+          <div class="roleta-ponteiro" aria-hidden="true"></div>
+
+          <div class="roleta-circulo" id="roletaCirculo" role="img" aria-label="Roleta com 12 atividades de bem-estar">
+            <span class="icone-roleta" style="--pos: 0">🌬️</span>
+            <span class="icone-roleta" style="--pos: 1">🌷</span>
+            <span class="icone-roleta" style="--pos: 2">💆</span>
+            <span class="icone-roleta" style="--pos: 3">🖐️</span>
+            <span class="icone-roleta" style="--pos: 4">👣</span>
+            <span class="icone-roleta" style="--pos: 5">👀</span>
+            <span class="icone-roleta" style="--pos: 6">👂</span>
+            <span class="icone-roleta" style="--pos: 7">🤲</span>
+            <span class="icone-roleta" style="--pos: 8">🦋</span>
+            <span class="icone-roleta" style="--pos: 9">🌈</span>
+            <span class="icone-roleta" style="--pos: 10">💭</span>
+            <span class="icone-roleta" style="--pos: 11">🙆</span>
+
+            <div class="roleta-centro">
+              <span>Pausa</span>
+              <small>para você</small>
+            </div>
+          </div>
+        </div>
+
+        <p class="roleta-instrucao">Clique no botão para sortear sua próxima atividade.</p>
+        <button class="botao botao-roleta" id="girarRoleta" type="button">🎡 Girar a roleta</button>
+
+        <div class="atividade-sorteada" aria-live="polite" aria-atomic="true">
+          <span class="atividade-icone" id="atividadeEmoji">✨</span>
+          <h3 id="tituloAtividade">Sua pausa começa aqui</h3>
+          <p id="descricaoAtividade">Gire a roleta para descobrir uma atividade.</p>
+        </div>
+
+        <p class="roleta-aviso">Você pode parar, adaptar ou pular qualquer atividade. Escolha o que for confortável para você.</p>
+      </div>
+
+      <div class="grupo-botoes centro">
+        <a href="index.html" class="botao botao-secundario">Voltar ao site</a>
+        <a href="quiz.html" class="botao">Ir para o quiz</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hiperconectividade e Saúde Mental</p>
+    <p>Use a tecnologia com consciência e equilíbrio.</p>
+  </footer>
+</body>
+</html>
